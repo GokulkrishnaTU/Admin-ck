@@ -1,0 +1,188 @@
+import styled from "styled-components";
+
+export const Modal = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+`;
+
+export const ModalContent = styled.div`
+  height: fit-content;
+  min-width: 340px;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 8px;
+  @media only screen and (max-width: 627px) {
+    width: 300px;
+  }
+  @media only screen and (max-width: 356px) {
+    min-width: 295px;
+  }
+`;
+export const ModalHeader = styled.div`
+  padding: 5px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const ModalTitle = styled.h1`
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 2px;
+`;
+
+export const ModalBody = styled.div`
+  padding: 10px 6px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+`;
+
+export const ModalForm = styled.form`
+  margin: 0px 10px;
+`;
+export const FormGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 10px;
+  label {
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  input {
+    outline-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    outline-color: rgba(0, 0, 0, 0.3);
+  }
+  textarea {
+    resize: none;
+    outline-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    outline-color: rgba(0, 0, 0, 0.3);
+  }
+  img {
+    width: 100px;
+    object-fit: contain;
+  }
+`;
+export const RadioDiv = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  padding-bottom: 10px;
+  span {
+    font-size: 12px;
+  }
+  label {
+    font-size: 10px;
+  }
+  input {
+    outline-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    outline-color: rgba(0, 0, 0, 0.3);
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    margin-left: 10px;
+  }
+  select {
+    margin-left: 10px;
+  }
+`;
+export const CheckboxDiv = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 10px;
+  margin-top: 5px;
+  span {
+    font-size: 12px;
+  }
+  label {
+    font-size: 10px;
+    margin-right: 5px;
+  }
+  input {
+    outline-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    outline-color: rgba(0, 0, 0, 0.3);
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin: 0;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+`;
+export const FormDiv = styled.div`
+  display: flex;
+  gap: 3%;
+  padding-bottom: 25px;
+  label {
+    font-size: 12px;
+    padding-right: 5px;
+
+    padding-top: 13px;
+  }
+  p {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  input[type="file"] {
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 12px;
+    width: 180px;
+  }
+  input[type="radio"] {
+    transform: scale(0.8);
+  }
+  div {
+    display: flex;
+    gap: 3%;
+  }
+  @media only screen and (max-width: 320px) {
+    gap: 0px;
+  }
+`;
+export const Button = styled.button`
+  background-color: #4668e9;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 100;
+  :hover {
+    /* background-color: rgb(72, 72, 250); */
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+`;

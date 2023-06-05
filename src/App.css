@@ -1,0 +1,16 @@
+
+*{
+  -ms-overflow-style: none;
+}
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+.font-link {
+  font-family: 'Poppins';
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: row;
+}
